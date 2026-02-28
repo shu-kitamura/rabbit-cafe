@@ -1,0 +1,40 @@
+---
+import type { BrandContent, FooterContent } from '../consts/landing-page';
+
+interface Props {
+	brand: BrandContent;
+	footer: FooterContent;
+}
+
+const { brand, footer } = Astro.props;
+---
+
+<footer class="site-footer" id={footer.id}>
+	<div class="footer-brand">
+		<a class="brand footer-brand-link" href="#top" aria-label={brand.backToTopLabel}>
+			<span class="brand-mark" aria-hidden="true"></span>
+			<span class="brand-text">{brand.name}</span>
+		</a>
+		<p>
+			{footer.descriptionLines[0]}
+			<br />
+			{footer.descriptionLines[1]}
+		</p>
+	</div>
+
+	<nav class="footer-links" aria-label="フッターナビゲーション">
+		{
+			footer.links.map((item) => (
+				<a href={item.href}>{item.label}</a>
+			))
+		}
+	</nav>
+
+	<div class="footer-meta">
+		{
+			footer.metaLines.map((line) => (
+				<p>{line}</p>
+			))
+		}
+	</div>
+</footer>

@@ -1,0 +1,48 @@
+---
+import type { ExperienceContent } from '../consts/landing-page';
+
+interface Props {
+	experience: ExperienceContent;
+}
+
+const { experience } = Astro.props;
+---
+
+<section class="section section-experience" id={experience.id}>
+	<div class="photo-panel">
+		<p class="photo-label">{experience.photoLabel}</p>
+		<div class="photo-scene" aria-hidden="true">
+			<div class="photo-card photo-card-large"></div>
+			<div class="photo-card photo-card-small"></div>
+		</div>
+	</div>
+
+	<div class="experience-copy">
+		<p class="eyebrow">{experience.eyebrow}</p>
+		<h2>
+			{experience.titleLines[0]}
+			<br />
+			{experience.titleLines[1]}
+			<br />
+			{experience.titleLines[2]}
+		</h2>
+		<p class="section-copy">
+			{experience.copyLines[0]}
+			<br />
+			{experience.copyLines[1]}
+		</p>
+
+		<div class="visit-flow" aria-label="来店の流れ">
+			{
+				experience.visitSteps.map((step, index) => (
+					<span class="visit-pill">
+						<small>{index + 1}</small>
+						{step}
+					</span>
+				))
+			}
+		</div>
+
+		<div class="support-note">{experience.supportNote}</div>
+	</div>
+</section>

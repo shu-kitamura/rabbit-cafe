@@ -1,0 +1,51 @@
+---
+import type { HeroContent } from '../consts/landing-page';
+
+interface Props {
+	hero: HeroContent;
+}
+
+const { hero } = Astro.props;
+const heroChipClasses = ['chip-left', 'chip-center', 'chip-right'] as const;
+---
+
+<section class="hero">
+	<div class="hero-copy">
+		<p class="eyebrow">{hero.eyebrow}</p>
+		<h1>
+			{hero.titleLines[0]}
+			<br />
+			{hero.titleLines[1]}
+		</h1>
+		<p class="hero-lead">
+			{hero.leadLines[0]}
+			<br />
+			{hero.leadLines[1]}
+		</p>
+		<div class="hero-actions">
+			<a class="button button-primary" href={hero.primaryCta.href}>
+				{hero.primaryCta.label}
+			</a>
+			<a class="button button-secondary" href={hero.secondaryCta.href}>
+				{hero.secondaryCta.label}
+			</a>
+		</div>
+	</div>
+
+	<div class="hero-visual" aria-labelledby="hero-visual-copy">
+		<p class="visual-caption" id="hero-visual-copy">
+			{hero.visualCaption}
+		</p>
+		<div class="visual-stage">
+			<div class="window-glow" aria-hidden="true"></div>
+			<div class="table-surface" aria-hidden="true"></div>
+			<div class="bunny bunny-left" aria-hidden="true"></div>
+			<div class="bunny bunny-right" aria-hidden="true"></div>
+			{
+				hero.visualChips.map((chip, index) => (
+					<div class={`visual-chip ${heroChipClasses[index] ?? ''}`}>{chip}</div>
+				))
+			}
+		</div>
+	</div>
+</section>

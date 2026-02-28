@@ -1,0 +1,74 @@
+---
+import type { AccessContent, ReservationContent } from '../consts/landing-page';
+
+interface Props {
+	access: AccessContent;
+	reservation: ReservationContent;
+}
+
+const { access, reservation } = Astro.props;
+---
+
+<section class="section section-access" id={access.id}>
+	<div class="access-copy">
+		<p class="eyebrow">{access.eyebrow}</p>
+		<h2>
+			{access.titleLines[0]}
+			<br />
+			{access.titleLines[1]}
+		</h2>
+		<p class="section-copy">
+			{access.copyLines[0]}
+			<br />
+			{access.copyLines[1]}
+		</p>
+
+		<div class="map-card">
+			<p>{access.mapTitle}</p>
+			<ul>
+				{
+					access.notes.map((note) => (
+						<li>{note}</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
+
+	<aside class="reservation-card">
+		<h2>
+			{reservation.titleLines[0]}
+			<br />
+			{reservation.titleLines[1]}
+		</h2>
+		<p>
+			{reservation.copyLines[0]}
+			<br />
+			{reservation.copyLines[1]}
+		</p>
+
+		<form class="reservation-form">
+			<label>
+				<span>{reservation.fields.dateLabel}</span>
+				<input
+					type="text"
+					name="date"
+					value={reservation.fields.defaultDate}
+				/>
+			</label>
+			<label>
+				<span>{reservation.fields.guestLabel}</span>
+				<select name="guests">
+					{
+						reservation.fields.guestOptions.map((option) => (
+							<option>{option}</option>
+						))
+					}
+				</select>
+			</label>
+			<button class="button button-primary" type="button">
+				{reservation.buttonLabel}
+			</button>
+		</form>
+	</aside>
+</section>

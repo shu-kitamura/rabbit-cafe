@@ -121,5 +121,17 @@ export const landingPageContent = {
       { label: "Instagram", href: "#top" },
     ],
     metaLines: ["11:00-19:00 毎日営業", "最終入店 18:00", "LPラフワイヤー"],
-  },
+	},
 } as const;
+
+export type LandingPageContent = typeof landingPageContent;
+export type BrandContent = LandingPageContent['brand'];
+export type HeaderCtaContent = LandingPageContent['headerCta'];
+export type NavItem = LandingPageContent['navItems'][number];
+export type HeroContent = LandingPageContent['hero'];
+export type ConceptContent = LandingPageContent['concept'];
+export type MenuContent = LandingPageContent['menu'];
+export type ExperienceContent = LandingPageContent['experience'];
+export type AccessContent = LandingPageContent['access'];
+export type ReservationContent = LandingPageContent['reservation'];
+export type FooterContent = LandingPageContent['footer'];

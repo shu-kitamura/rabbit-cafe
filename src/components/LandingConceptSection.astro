@@ -1,0 +1,34 @@
+---
+import type { ConceptContent } from '../consts/landing-page';
+
+interface Props {
+	concept: ConceptContent;
+}
+
+const { concept } = Astro.props;
+---
+
+<section class="section section-concept">
+	<p class="eyebrow">{concept.eyebrow}</p>
+	<h2>
+		{concept.titleLines[0]}
+		<br />
+		{concept.titleLines[1]}
+	</h2>
+	<p class="section-copy">
+		{concept.copyLines[0]}
+		<br />
+		{concept.copyLines[1]}
+	</p>
+
+	<div class="card-grid">
+		{
+			concept.cards.map((card) => (
+				<article class={`info-card ${card.tone}`}>
+					<h3>{card.title}</h3>
+					<p>{card.body}</p>
+				</article>
+			))
+		}
+	</div>
+</section>

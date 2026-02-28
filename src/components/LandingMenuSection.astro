@@ -1,0 +1,30 @@
+---
+import type { MenuContent } from '../consts/landing-page';
+
+interface Props {
+	menu: MenuContent;
+}
+
+const { menu } = Astro.props;
+---
+
+<section class="section section-menu" id={menu.id}>
+	<p class="eyebrow">{menu.eyebrow}</p>
+	<h2>
+		{menu.titleLines[0]}
+		<br />
+		{menu.titleLines[1]}
+	</h2>
+
+	<div class="card-grid">
+		{
+			menu.cards.map((card) => (
+				<article class={`info-card ${card.tone}`}>
+					<div class="menu-illustration" aria-hidden="true"></div>
+					<h3>{card.title}</h3>
+					<p>{card.body}</p>
+				</article>
+			))
+		}
+	</div>
+</section>
