@@ -3,6 +3,9 @@
 ## Project Structure & Module Organization
 This repository is a small Astro 5 site. Keep route files in `src/pages/`, shared UI in `src/components/`, and page shells in `src/layouts/`. Store bundled images and SVGs in `src/assets/`; put static files that must keep their URL in `public/`. Design artifacts live in `docs/` (`docs/gui-design.pen`). Build output goes to `dist/`, and Astro-generated metadata is written to `.astro/`; both are ignored.
 
+## Design Workflow
+For UI changes, start by updating the design in Pencil and keep the source of truth in `docs/gui-design.pen`. Once the design direction is settled, implement it in the Astro codebase under `src/` so the build matches the latest Pencil document.
+
 ## Build, Test, and Development Commands
 Use `pnpm` from the repository root.
 
