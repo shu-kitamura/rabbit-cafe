@@ -6,12 +6,790 @@
       "id": "bi8Au",
       "x": 0,
       "y": 0,
-      "name": "Frame",
-      "clip": true,
-      "width": 800,
-      "height": 600,
-      "fill": "#FFFFFF",
-      "layout": "none"
+      "name": "Rabbit Cafe Landing Page",
+      "width": 1440,
+      "fill": "#FAF8F5",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "hzHCr",
+          "name": "Header",
+          "width": "fill_container",
+          "gap": 24,
+          "padding": [
+            24,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "xDt3U",
+              "name": "brand",
+              "content": "うさぎカフェ",
+              "fontFamily": "Fraunces",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "trwhg",
+              "name": "nav",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "RVoum",
+                  "name": "nav1",
+                  "fill": "#5A5A5A",
+                  "content": "ホーム",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "7I9Xk",
+                  "name": "nav2",
+                  "fill": "#5A5A5A",
+                  "content": "メニュー",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "5Xc7z",
+                  "name": "nav3",
+                  "fill": "#5A5A5A",
+                  "content": "うさぎ紹介",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kOEur",
+                  "name": "nav4",
+                  "fill": "#5A5A5A",
+                  "content": "アクセス",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fOHgm",
+              "name": "bookBtn",
+              "fill": "#7C9082",
+              "cornerRadius": 24,
+              "padding": [
+                12,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D1awW",
+                  "name": "bookText",
+                  "fill": "#FFFFFF",
+                  "content": "席を予約する",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "medium"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "phkOy",
+          "name": "Hero",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": [
+            24,
+            80,
+            72,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ciH80",
+              "name": "heroCopy",
+              "width": 620,
+              "height": 520,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j4vpF",
+                  "name": "badge",
+                  "fill": "#7C9082",
+                  "content": "やわらかな時間、あたたかい飲み物、好奇心いっぱいのうさぎたち。",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wicfi",
+                  "name": "heroTitle",
+                  "content": "街なかにある\n静かなうさぎカフェ。",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 58,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "58XUZ",
+                  "name": "heroSub",
+                  "fill": "#5A5A5A",
+                  "content": "やさしいうさぎとふれあい、季節のラテを味わい、\n午後の時間をゆっくりほどいていけます。",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "FmRMk",
+                  "name": "ctaRow",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "KfGFX",
+                      "name": "ctaPrimary",
+                      "fill": "#7C9082",
+                      "cornerRadius": 24,
+                      "padding": [
+                        14,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4sThu",
+                          "name": "ctaPrimaryText",
+                          "fill": "#FFFFFF",
+                          "content": "うさぎ時間を予約",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "raFyo",
+                      "name": "ctaSecondary",
+                      "fill": "#F0EDE8",
+                      "cornerRadius": 24,
+                      "padding": [
+                        14,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vtH1k",
+                          "name": "ctaSecondaryText",
+                          "content": "本日のメニューを見る",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vCy8n",
+              "name": "Hero Visual",
+              "width": "fill_container",
+              "height": 520,
+              "fill": "#F0EDE8",
+              "cornerRadius": 28,
+              "layout": "vertical",
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8PGri",
+                  "name": "heroHint",
+                  "fill": "#8A8A8A",
+                  "content": "メイン写真プレースホルダー：やわらかな光、うさぎ、木のテーブル",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JoqyE",
+          "name": "Concept",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            56,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "V7c6q",
+              "name": "conceptEyebrow",
+              "fill": "#7C9082",
+              "content": "午後をほどく、小さな逃げ場。",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "vpK0g",
+              "name": "conceptTitle",
+              "fill": "#2D2D2D",
+              "content": "つい長居したくなる\n理由をここで伝える。",
+              "fontFamily": "Fraunces",
+              "fontSize": 38,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "uVd0P",
+              "name": "conceptSub",
+              "fill": "#5A5A5A",
+              "content": "このラフでは、落ち着く空間、うさぎとのふれあい、\nカフェ体験の魅力が伝わる流れを先に固めています。",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "G49py",
+              "name": "benefitRow",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hhwtE",
+                  "name": "benefit1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Nr5kk",
+                      "name": "benefit1Text",
+                      "fill": "#2D2D2D",
+                      "content": "静かな席\nやわらかな光と落ち着いたテーブル。",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eey3J",
+                  "name": "benefit2",
+                  "width": "fill_container",
+                  "fill": "#F7F1E8",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LJ0IP",
+                      "name": "benefit2Text",
+                      "fill": "#2D2D2D",
+                      "content": "うさぎとの時間\nやさしく見守るふれあい体験。",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U36G2",
+                  "name": "benefit3",
+                  "width": "fill_container",
+                  "fill": "#EAF0E8",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6hSgU",
+                      "name": "benefit3Text",
+                      "fill": "#2D2D2D",
+                      "content": "季節のメニュー\nうさぎをモチーフにしたドリンクとスイーツ。",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BBUHM",
+          "name": "Menu Highlights",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            56,
+            80
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "KcbYJ",
+              "name": "menuEyebrow",
+              "fill": "#7C9082",
+              "content": "おすすめメニュー",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "75rGs",
+              "name": "menuTitle",
+              "fill": "#2D2D2D",
+              "content": "看板ドリンクと\nスイーツ",
+              "fontFamily": "Fraunces",
+              "fontSize": 36,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "WIfIJ",
+              "name": "menuGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mztQM",
+                  "name": "menuCard1",
+                  "width": "fill_container",
+                  "fill": "#F8F4EE",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J1bNc",
+                      "name": "menuCard1Text",
+                      "fill": "#2D2D2D",
+                      "content": "キャラメルヘイラテ\n看板ドリンクの主役カード。",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JkCkJ",
+                  "name": "menuCard2",
+                  "width": "fill_container",
+                  "fill": "#F3E9DA",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "B3QvI",
+                      "name": "menuCard2Text",
+                      "fill": "#2D2D2D",
+                      "content": "ベリーバニーパフェ\n季節デザートの紹介カード。",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1hvRD",
+                  "name": "menuCard3",
+                  "width": "fill_container",
+                  "fill": "#EAF0E8",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kgaKo",
+                      "name": "menuCard3Text",
+                      "fill": "#2D2D2D",
+                      "content": "週末ティーセット\nふたり向けの限定プラン。",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8eVzN",
+          "name": "Experience",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": [
+            56,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "nIM4I",
+              "name": "Experience Photo",
+              "width": 620,
+              "height": 360,
+              "fill": "#F0EDE8",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NsPCM",
+                  "name": "expVisualText",
+                  "fill": "#8A8A8A",
+                  "content": "写真プレースホルダー：うさぎ、木の質感、午後の光",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bXunj",
+              "name": "expCopy",
+              "width": "fill_container",
+              "height": 361,
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6Mmv6",
+                  "name": "expEyebrow",
+                  "fill": "#7C9082",
+                  "content": "過ごし方のイメージ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "z8pxr",
+                  "name": "expTitle",
+                  "fill": "#2D2D2D",
+                  "content": "到着して、くつろいで、\nうさぎに会って、\nデザートで締める。",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 34,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "pVNRE",
+                  "name": "expBody",
+                  "fill": "#5A5A5A",
+                  "content": "来店の流れ、衛生面の案内、\nはじめての方向け説明をここに置きます。",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "mUpB3",
+                  "name": "expNote",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 20,
+                  "padding": [
+                    14,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QMlB5",
+                      "name": "expNoteText",
+                      "fill": "#2D2D2D",
+                      "content": "補足帯：落ち着いた案内、時間制、スタッフ常駐。",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VExb0",
+          "name": "Access & CTA",
+          "width": "fill_container",
+          "fill": "#F3E9DA",
+          "gap": 40,
+          "padding": [
+            56,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "2qilS",
+              "name": "accessLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1wujw",
+                  "name": "accessEyebrow",
+                  "fill": "#7C9082",
+                  "content": "アクセスと予約",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "DOZS1",
+                  "name": "accessTitle",
+                  "fill": "#2D2D2D",
+                  "content": "先に予約して、\n迷わずたどり着く。",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 34,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "FRvya",
+                  "name": "accessBody",
+                  "fill": "#5A5A5A",
+                  "content": "営業時間、最寄り駅、\n簡単な利用ルールをここに。",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "7NajZ",
+                  "name": "mapCard",
+                  "width": "fill_container",
+                  "height": 160,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 20,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mTTG4",
+                      "name": "mapText",
+                      "fill": "#2D2D2D",
+                      "content": "地図プレースホルダー＋営業時間\n駅から徒歩2分 / 予約優先",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "6EibW",
+              "name": "ctaCard",
+              "width": 420,
+              "height": 379,
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IcqJs",
+                  "name": "ctaTitle",
+                  "fill": "#2D2D2D",
+                  "content": "ゆっくり過ごす\n午後を予約",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 28,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "BCCEa",
+                  "name": "ctaBody",
+                  "fill": "#5A5A5A",
+                  "content": "予約UIの想定枠。\n日付、人数、プラン選択を配置。",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "iCT7e",
+                  "name": "ctaButton",
+                  "fill": "#7C9082",
+                  "cornerRadius": 24,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gV73u",
+                      "name": "ctaButtonText",
+                      "fill": "#FFFFFF",
+                      "content": "予約をはじめる",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WIYSZ",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#6E7E68",
+          "gap": 40,
+          "padding": [
+            40,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Kv37J",
+              "name": "footBrand",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fFpmQ",
+                  "name": "footBrandTitle",
+                  "fill": "#FFFFFF",
+                  "content": "うさぎカフェ",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "JkBFs",
+                  "name": "footBrandText",
+                  "fill": "#E6EFE1",
+                  "content": "お茶とスイーツ、そしてやさしいうさぎに会える、\n街の小さな隠れ家。",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8CeaT",
+              "name": "footLinks",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eQJO1",
+                  "name": "footLinksText",
+                  "fill": "#FFFFFF",
+                  "content": "メニュー\nご予約\nアクセス\nInstagram",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tOfRs",
+              "name": "footMeta",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "9cs61",
+                  "name": "footMetaText",
+                  "fill": "#E6EFE1",
+                  "content": "11:00-19:00 毎日営業\n最終入店 18:00\nLPラフワイヤー",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
