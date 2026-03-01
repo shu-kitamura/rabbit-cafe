@@ -1,4 +1,5 @@
 ---
+import BrandMark from './BrandMark.astro';
 import type { BrandContent, FooterContent } from '../consts/landing-page';
 
 interface Props {
@@ -12,7 +13,7 @@ const { brand, footer } = Astro.props;
 <footer class="site-footer" id={footer.id}>
 	<div class="footer-brand">
 		<a class="brand footer-brand-link" href="#top" aria-label={brand.backToTopLabel}>
-			<span class="brand-mark" aria-hidden="true"></span>
+			<BrandMark />
 			<span class="brand-text">{brand.name}</span>
 		</a>
 		<p>

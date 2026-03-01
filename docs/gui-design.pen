@@ -23,13 +23,31 @@
           ],
           "children": [
             {
-              "type": "text",
-              "id": "xDt3U",
-              "name": "brand",
-              "content": "うさぎカフェ",
-              "fontFamily": "Fraunces",
-              "fontSize": 24,
-              "fontWeight": "normal"
+              "type": "frame",
+              "id": "MvjXI",
+              "name": "headerBrandRow",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "2MDB0",
+                  "name": "headerIcon",
+                  "width": 22,
+                  "height": 22,
+                  "fill": "#7C9082",
+                  "cornerRadius": 999
+                },
+                {
+                  "type": "text",
+                  "id": "AfrWY",
+                  "name": "headerBrandText",
+                  "fill": "#2D2D2D",
+                  "content": "うさぎカフェ",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
             },
             {
               "type": "frame",
@@ -976,14 +994,31 @@
               "gap": 12,
               "children": [
                 {
-                  "type": "text",
-                  "id": "fFpmQ",
-                  "name": "footBrandTitle",
-                  "fill": "#FFFFFF",
-                  "content": "うさぎカフェ",
-                  "fontFamily": "Fraunces",
-                  "fontSize": 24,
-                  "fontWeight": "normal"
+                  "type": "frame",
+                  "id": "IIaIu",
+                  "name": "footerBrandRow",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mK1M3",
+                      "name": "footerIcon",
+                      "width": 22,
+                      "height": 22,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "text",
+                      "id": "SCwX3",
+                      "name": "footerBrandText",
+                      "fill": "#FFFFFF",
+                      "content": "うさぎカフェ",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    }
+                  ]
                 },
                 {
                   "type": "text",
