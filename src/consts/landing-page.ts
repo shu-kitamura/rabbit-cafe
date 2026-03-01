@@ -5,6 +5,10 @@ import heroRabbitsImage from "../assets/hero/rabbits.png";
 import cafeLatteImage from "../assets/menu/cafe-latte.png";
 import parfaitImage from "../assets/menu/parfait.png";
 import teaSetImage from "../assets/menu/tea-set.png";
+import komugiImage from "../assets/experience/komugi.png";
+import mimiImage from "../assets/experience/mimi.png";
+import omameImage from "../assets/experience/omame.png";
+import leoImage from "../assets/experience/leo.png";
 
 export const landingPageContent = {
   meta: {
@@ -108,29 +112,36 @@ export const landingPageContent = {
     eyebrow: "うさぎ紹介",
     titleLines: ["今日会えるうさぎ"],
     copyLines: ["写真、性格、好きなおやつ、ふれあえる時間帯を", "切り替えながら見られる想定です。"],
-    carouselLabel: "今日会えるうさぎ",
     activeIndex: 0,
     bunnies: [
       {
         name: "こむぎ",
         age: "1歳",
         summary: "おだやか / ひとなつこい / そっと近づくタイプ",
+        image: komugiImage,
+        imageAlt: "こむぎがカメラを見つめる様子",
       },
       {
-        name: "しらたま",
+        name: "みみ",
         age: "2歳",
-        summary: "好奇心たっぷり / ぴょんと近づく / おやつに敏感",
+        summary: "好奇心たっぷり / 耳がぴんと立つ / ぴょんと近づくタイプ",
+        image: mimiImage,
+        imageAlt: "みみが少し首をかしげる様子",
       },
       {
-        name: "きなこ",
+        name: "おまめ",
         age: "8か月",
-        summary: "まだ少し慎重 / 慣れると耳を寄せてくれる",
+        summary: "まだ少し慎重 / 慣れると足元まで来てくれる",
+        image: omameImage,
+        imageAlt: "おまめが落ち着いて座っている様子",
       },
       {
-        name: "ゆき",
+        name: "レオ",
         age: "3歳",
-        summary: "のんびり屋 / ひなたでくつろぐのが好き",
-      },
+        summary: "元気いっぱい / 好奇心旺盛 / すぐに駆け寄るタイプ",
+        image: leoImage,
+        imageAlt: "レオが元気に走り回る様子",
+      }
     ],
   },
   access: {

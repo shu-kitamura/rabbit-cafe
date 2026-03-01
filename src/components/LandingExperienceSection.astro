@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import type { ExperienceContent } from '../consts/landing-page';
 
 interface Props {
@@ -6,7 +7,8 @@ interface Props {
 }
 
 const { experience } = Astro.props;
-const activeBunny = experience.bunnies[experience.activeIndex];
+const bunnyCount = experience.bunnies.length;
+const initialIndex = bunnyCount > 0 ? Math.min(Math.max(experience.activeIndex, 0), bunnyCount - 1) : 0;
 const experienceTitle = experience.titleLines.join('\n');
 const experienceCopy = experience.copyLines.join('\n');
 ---
@@ -18,31 +20,136 @@ const experienceCopy = experience.copyLines.join('\n');
 		<p class="section-copy experience-summary">{experienceCopy}</p>
 	</div>
 
-	<div class="photo-panel bunny-carousel" aria-label="今日会えるうさぎカルーセル">
+	<div
+		class="photo-panel bunny-carousel"
+		data-bunny-carousel
+		data-active-index={initialIndex}
+		aria-label="今日会えるうさぎカルーセル"
+	>
 		<p class="photo-label">
-			{experience.carouselLabel} {experience.activeIndex + 1} / {experience.bunnies.length}
+			<span data-carousel-current>{initialIndex + 1}</span> / {bunnyCount}
 		</p>
-		<div class="carousel-stage" aria-hidden="true"></div>
+		<div class="carousel-stage">
+			{
+				experience.bunnies.map((bunny, index) => (
+					<div
+						data-carousel-slide
+						data-index={index}
+						class={`carousel-slide ${index === initialIndex ? 'is-active' : ''}`}
+						aria-hidden={index === initialIndex ? 'false' : 'true'}
+					>
+						<Image
+							class="carousel-image"
+							src={bunny.image}
+							alt={bunny.imageAlt}
+							sizes="(max-width: 900px) 100vw, 42vw"
+						/>
+					</div>
+				))
+			}
+		</div>
 
 		<div class="carousel-footer">
-			<div class="carousel-meta">
-				<h3>
-					{activeBunny.name} / {activeBunny.age}
-				</h3>
-				<p>{activeBunny.summary}</p>
+			<div class="carousel-meta" aria-live="polite">
+				{
+					experience.bunnies.map((bunny, index) => (
+						<div
+							data-carousel-meta
+							data-index={index}
+							class={`carousel-meta-item ${index === initialIndex ? 'is-active' : ''}`}
+							aria-hidden={index === initialIndex ? 'false' : 'true'}
+						>
+							<h3>
+								{bunny.name} ({bunny.age})
+							</h3>
+							<p>{bunny.summary}</p>
+						</div>
+					))
+				}
 			</div>
-			<div class="carousel-controls" aria-hidden="true">
-				<span class="carousel-control">‹</span>
-				<span class="carousel-control">›</span>
+			<div class="carousel-controls">
+				<button type="button" class="carousel-control" data-carousel-prev aria-label="前のうさぎを表示">
+					‹
+				</button>
+				<button type="button" class="carousel-control" data-carousel-next aria-label="次のうさぎを表示">
+					›
+				</button>
 			</div>
 		</div>
 
-		<div class="carousel-dots" aria-hidden="true">
+		<div class="carousel-dots">
 			{
-				experience.bunnies.map((_, index) => (
-					<span class={`carousel-dot ${index === experience.activeIndex ? 'is-active' : ''}`}></span>
+				experience.bunnies.map((bunny, index) => (
+					<button
+						type="button"
+						class={`carousel-dot ${index === initialIndex ? 'is-active' : ''}`}
+						data-carousel-dot
+						data-index={index}
+						aria-label={`${bunny.name}を表示`}
+						aria-pressed={index === initialIndex ? 'true' : 'false'}
+					></button>
 				))
 			}
 		</div>
 	</div>
 </section>
+
+<script is:inline>
+	const carousels = document.querySelectorAll('[data-bunny-carousel]')
+
+	for (const carousel of carousels) {
+		const slides = Array.from(carousel.querySelectorAll('[data-carousel-slide]'))
+		const metaItems = Array.from(carousel.querySelectorAll('[data-carousel-meta]'))
+		const dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'))
+		const current = carousel.querySelector('[data-carousel-current]')
+		const prevButton = carousel.querySelector('[data-carousel-prev]')
+		const nextButton = carousel.querySelector('[data-carousel-next]')
+
+		if (!(current instanceof HTMLElement) || !(prevButton instanceof HTMLButtonElement) || !(nextButton instanceof HTMLButtonElement)) {
+			continue
+		}
+
+		let activeIndex = Number(carousel.getAttribute('data-active-index') ?? '0')
+
+		if (!Number.isInteger(activeIndex) || activeIndex < 0 || activeIndex >= slides.length) {
+			activeIndex = 0
+		}
+
+		const updateCarousel = (nextIndex) => {
+			if (slides.length === 0) {
+				return
+			}
+
+			activeIndex = (nextIndex + slides.length) % slides.length
+			carousel.setAttribute('data-active-index', String(activeIndex))
+			current.textContent = String(activeIndex + 1)
+
+			slides.forEach((slide, index) => {
+				const isActive = index === activeIndex
+				slide.classList.toggle('is-active', isActive)
+				slide.setAttribute('aria-hidden', String(!isActive))
+			})
+
+			metaItems.forEach((item, index) => {
+				const isActive = index === activeIndex
+				item.classList.toggle('is-active', isActive)
+				item.setAttribute('aria-hidden', String(!isActive))
+			})
+
+			dots.forEach((dot, index) => {
+				const isActive = index === activeIndex
+				dot.classList.toggle('is-active', isActive)
+				dot.setAttribute('aria-pressed', String(isActive))
+			})
+		}
+
+		prevButton.addEventListener('click', () => updateCarousel(activeIndex - 1))
+		nextButton.addEventListener('click', () => updateCarousel(activeIndex + 1))
+
+		dots.forEach((dot, index) => {
+			dot.addEventListener('click', () => updateCarousel(index))
+		})
+
+		updateCarousel(activeIndex)
+	}
+</script>
