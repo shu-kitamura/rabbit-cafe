@@ -38,6 +38,8 @@ const { hero } = Astro.props;
 				class="hero-photo"
 				src={hero.visualImage}
 				alt={hero.visualAlt}
+				loading="eager"
+				fetchpriority="high"
 			/>
 		</div>
 	</div>
