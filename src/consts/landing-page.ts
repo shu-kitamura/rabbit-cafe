@@ -12,7 +12,7 @@ import leoImage from "../assets/experience/leo.png";
 
 export const landingPageContent = {
   meta: {
-    title: "うさぎカフェ | 街なかにある静かなうさぎカフェ",
+    title: "うさぎカフェ | 街なかの静かなうさぎカフェ",
     description:
       "やさしいうさぎとふれあい、季節のラテを味わい、午後の時間をゆっくりほどいていける街なかのうさぎカフェ。",
   },
@@ -32,7 +32,7 @@ export const landingPageContent = {
   ],
   hero: {
     eyebrow: "やわらかな時間、あたたかい飲み物、好奇心いっぱいのうさぎたち。",
-    titleLines: ["街なかにある", "静かなうさぎカフェ。"],
+    titleLines: ["街なかの静かな", "うさぎカフェ"],
     leadLines: [
       "やさしいうさぎとふれあい、季節のラテを味わい、",
       "午後の時間をゆっくりほどいていけます。",
@@ -42,11 +42,11 @@ export const landingPageContent = {
       href: "#access",
     },
     secondaryCta: {
-      label: "本日のメニューを見る",
+      label: "おすすめメニューを見る",
       href: "#menu",
     },
     visualImage: heroRabbitsImage,
-    visualAlt: "やわらかな光の中で寄り添う二匹のうさぎ",
+    visualAlt: "やわらかな光の中で寄り添ううさぎたち",
   },
   concept: {
     eyebrow: "午後をほどく、小さな逃げ場。",
@@ -166,13 +166,7 @@ export const landingPageContent = {
   footer: {
     id: "footer",
     descriptionLines: ["お茶とスイーツ、そしてやさしいうさぎに会える、", "街の小さな隠れ家。"],
-    links: [
-      { label: "メニュー", href: "#menu" },
-      { label: "ご予約", href: "#access" },
-      { label: "アクセス", href: "#access" },
-      { label: "Instagram", href: "#top" },
-    ],
-    metaLines: ["11:00-19:00 毎日営業", "最終入店 18:00", "LPラフワイヤー"],
+    metaLines: ["11:00-19:00 毎日営業", "最終入店 18:00"],
   },
 } as const;
 
