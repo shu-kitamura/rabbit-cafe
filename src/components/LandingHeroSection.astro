@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import type { HeroContent } from '../consts/landing-page';
 
 interface Props {
@@ -6,7 +7,6 @@ interface Props {
 }
 
 const { hero } = Astro.props;
-const heroChipClasses = ['chip-left', 'chip-center', 'chip-right'] as const;
 ---
 
 <section class="hero">
@@ -33,19 +33,12 @@ const heroChipClasses = ['chip-left', 'chip-center', 'chip-right'] as const;
 	</div>
 
 	<div class="hero-visual" aria-labelledby="hero-visual-copy">
-		<p class="visual-caption" id="hero-visual-copy">
-			{hero.visualCaption}
-		</p>
 		<div class="visual-stage">
-			<div class="window-glow" aria-hidden="true"></div>
-			<div class="table-surface" aria-hidden="true"></div>
-			<div class="bunny bunny-left" aria-hidden="true"></div>
-			<div class="bunny bunny-right" aria-hidden="true"></div>
-			{
-				hero.visualChips.map((chip, index) => (
-					<div class={`visual-chip ${heroChipClasses[index] ?? ''}`}>{chip}</div>
-				))
-			}
+			<Image
+				class="hero-photo"
+				src={hero.visualImage}
+				alt={hero.visualAlt}
+			/>
 		</div>
 	</div>
 </section>

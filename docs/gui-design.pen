@@ -220,17 +220,37 @@
               "fill": "#F0EDE8",
               "cornerRadius": 28,
               "layout": "vertical",
+              "gap": 20,
               "padding": 24,
               "children": [
                 {
-                  "type": "text",
-                  "id": "8PGri",
-                  "name": "heroHint",
-                  "fill": "#8A8A8A",
-                  "content": "メイン写真プレースホルダー：やわらかな光、うさぎ、木のテーブル",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
+                  "type": "frame",
+                  "id": "5nmeQ",
+                  "name": "heroVisualContent",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DiNn1",
+                      "name": "heroCaption",
+                      "fill": "#8A8A8A",
+                      "content": "メイン写真：やわらかな光、うさぎ、木のテーブル",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eI7sG",
+                      "name": "heroImageFrame",
+                      "width": "fill_container",
+                      "height": 432,
+                      "fill": "#F7F1E8",
+                      "cornerRadius": 24
+                    }
+                  ]
                 }
               ]
             }

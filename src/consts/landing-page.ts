@@ -1,6 +1,7 @@
 import rabbitImage from "../assets/concept/rabbit.png";
 import sweetsImage from "../assets/concept/sweets.png";
 import tableImage from "../assets/concept/table.png";
+import heroRabbitsImage from "../assets/hero/rabbits.png";
 import cafeLatteImage from "../assets/menu/cafe-latte.png";
 import parfaitImage from "../assets/menu/parfait.png";
 import teaSetImage from "../assets/menu/tea-set.png";
@@ -40,8 +41,8 @@ export const landingPageContent = {
       label: "本日のメニューを見る",
       href: "#menu",
     },
-    visualCaption: "メイン写真プレースホルダー：やわらかな光、うさぎ、木のテーブル",
-    visualChips: ["やわらかな光", "うさぎ", "木のテーブル"],
+    visualImage: heroRabbitsImage,
+    visualAlt: "やわらかな光の中で寄り添う二匹のうさぎ",
   },
   concept: {
     eyebrow: "午後をほどく、小さな逃げ場。",
