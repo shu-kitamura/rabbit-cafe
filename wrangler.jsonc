@@ -1,7 +1,7 @@
 {
-  "name": "lp-rabbit-cafe",
+  "name": "rabbit-cafe",
   "compatibility_date": "2026-03-01", // デプロイする日に更新してください
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+  },
 }

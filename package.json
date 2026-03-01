@@ -1,6 +1,7 @@
 {
   "name": "rabbit-cafe",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Landing page sample (Rabbit Cafe)",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
