@@ -366,6 +366,18 @@ h2 {
   box-shadow: 0 18px 42px rgba(112, 94, 72, 0.05);
 }
 
+.concept-card {
+  gap: 14px;
+}
+
+.concept-card-image {
+  width: 100%;
+  height: clamp(160px, 16vw, 220px);
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .info-card h3 {
   margin: 0;
   font-size: 1rem;

@@ -1,3 +1,7 @@
+import rabbitImage from "../assets/concept/rabbit.png";
+import sweetsImage from "../assets/concept/sweets.png";
+import tableImage from "../assets/concept/table.png";
+
 export const landingPageContent = {
   meta: {
     title: "うさぎカフェ | 街なかにある静かなうさぎカフェ",
@@ -48,16 +52,22 @@ export const landingPageContent = {
         title: "静かな席",
         body: "やわらかな光と落ち着いたテーブル。",
         tone: "card-plain",
+        image: tableImage,
+        imageAlt: "やわらかな光が差し込む木のテーブル席",
       },
       {
         title: "うさぎとの時間",
         body: "やさしく見守るふれあい体験。",
         tone: "card-warm",
+        image: rabbitImage,
+        imageAlt: "落ち着いた表情でこちらを見るうさぎ",
       },
       {
         title: "季節のメニュー",
         body: "うさぎをモチーフにしたドリンクとスイーツ。",
         tone: "card-sage",
+        image: sweetsImage,
+        imageAlt: "うさぎをモチーフにしたドリンクとスイーツ",
       },
     ],
   },

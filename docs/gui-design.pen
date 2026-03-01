@@ -297,14 +297,42 @@
                   "padding": 24,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "Nr5kk",
-                      "name": "benefit1Text",
-                      "fill": "#2D2D2D",
-                      "content": "静かな席\nやわらかな光と落ち着いたテーブル。",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "esOPB",
+                      "name": "benefit1Content",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CrWiR",
+                          "name": "benefit1Image",
+                          "width": "fill_container",
+                          "height": 120,
+                          "fill": "#F5F1EA",
+                          "cornerRadius": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "8cMOp",
+                          "name": "benefit1Title",
+                          "fill": "#2D2D2D",
+                          "content": "静かな席",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "u1Poh",
+                          "name": "benefit1Body",
+                          "fill": "#5A5A5A",
+                          "content": "やわらかな光と落ち着いたテーブル。",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -320,14 +348,42 @@
                   "padding": 24,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "LJ0IP",
-                      "name": "benefit2Text",
-                      "fill": "#2D2D2D",
-                      "content": "うさぎとの時間\nやさしく見守るふれあい体験。",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "mEOAu",
+                      "name": "benefit2Content",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "g1wka",
+                          "name": "benefit2Image",
+                          "width": "fill_container",
+                          "height": 120,
+                          "fill": "#EEE4D2",
+                          "cornerRadius": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "x1rSl",
+                          "name": "benefit2Title",
+                          "fill": "#2D2D2D",
+                          "content": "うさぎとの時間",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pfGGd",
+                          "name": "benefit2Body",
+                          "fill": "#5A5A5A",
+                          "content": "やさしく見守るふれあい体験。",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -343,14 +399,42 @@
                   "padding": 24,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "6hSgU",
-                      "name": "benefit3Text",
-                      "fill": "#2D2D2D",
-                      "content": "季節のメニュー\nうさぎをモチーフにしたドリンクとスイーツ。",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "553w2",
+                      "name": "benefit3Content",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "5CklD",
+                          "name": "benefit3Image",
+                          "width": "fill_container",
+                          "height": 120,
+                          "fill": "#DDE8DA",
+                          "cornerRadius": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "9D0zt",
+                          "name": "benefit3Title",
+                          "fill": "#2D2D2D",
+                          "content": "季節のメニュー",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VFtYK",
+                          "name": "benefit3Body",
+                          "fill": "#5A5A5A",
+                          "content": "うさぎをモチーフにしたドリンクとスイーツ。",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 }

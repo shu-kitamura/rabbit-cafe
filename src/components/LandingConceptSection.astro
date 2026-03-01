@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import type { ConceptContent } from '../consts/landing-page';
 
 interface Props {
@@ -23,10 +24,15 @@ const { concept } = Astro.props;
 
 	<div class="card-grid">
 		{
-			concept.cards.map((card) => (
-				<article class={`info-card ${card.tone}`}>
-					<h3>{card.title}</h3>
-					<p>{card.body}</p>
+				concept.cards.map((card) => (
+					<article class={`info-card concept-card ${card.tone}`}>
+						<Image
+							class="concept-card-image"
+							src={card.image}
+							alt={card.imageAlt}
+						/>
+						<h3>{card.title}</h3>
+						<p>{card.body}</p>
 				</article>
 			))
 		}
