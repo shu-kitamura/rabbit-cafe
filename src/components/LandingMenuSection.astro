@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import type { MenuContent } from '../consts/landing-page';
 
 interface Props {
@@ -19,8 +20,14 @@ const { menu } = Astro.props;
 	<div class="card-grid">
 		{
 			menu.cards.map((card) => (
-				<article class={`info-card ${card.tone}`}>
-					<div class="menu-illustration" aria-hidden="true"></div>
+				<article class={`info-card menu-card ${card.tone}`}>
+					<div class="menu-card-media">
+						<Image
+							class="menu-card-image"
+							src={card.image}
+							alt={card.imageAlt}
+						/>
+					</div>
 					<h3>{card.title}</h3>
 					<p>{card.body}</p>
 				</article>

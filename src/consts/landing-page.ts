@@ -1,6 +1,9 @@
 import rabbitImage from "../assets/concept/rabbit.png";
 import sweetsImage from "../assets/concept/sweets.png";
 import tableImage from "../assets/concept/table.png";
+import cafeLatteImage from "../assets/menu/cafe-latte.png";
+import parfaitImage from "../assets/menu/parfait.png";
+import teaSetImage from "../assets/menu/tea-set.png";
 
 export const landingPageContent = {
   meta: {
@@ -80,16 +83,22 @@ export const landingPageContent = {
         title: "キャラメルヘイラテ",
         body: "看板ドリンクの主役カード。",
         tone: "card-soft",
+        image: cafeLatteImage,
+        imageAlt: "キャラメルヘイラテのメニュー写真",
       },
       {
         title: "ベリーバニーパフェ",
         body: "季節デザートの紹介カード。",
         tone: "card-peach",
+        image: parfaitImage,
+        imageAlt: "ベリーバニーパフェのメニュー写真",
       },
       {
         title: "週末ティーセット",
         body: "ふたり向けの限定プラン。",
         tone: "card-mint",
+        image: teaSetImage,
+        imageAlt: "週末ティーセットのメニュー写真",
       },
     ],
   },

@@ -494,14 +494,42 @@
                   "padding": 24,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "J1bNc",
-                      "name": "menuCard1Text",
-                      "fill": "#2D2D2D",
-                      "content": "キャラメルヘイラテ\n看板ドリンクの主役カード。",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "Xdoo7",
+                      "name": "menuCard1Content",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kLxwP",
+                          "name": "menuCard1Image",
+                          "width": "fill_container",
+                          "height": 120,
+                          "fill": "#F0E4D3",
+                          "cornerRadius": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "HmkV0",
+                          "name": "menuCard1Title",
+                          "fill": "#2D2D2D",
+                          "content": "キャラメルヘイラテ",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2QhP1",
+                          "name": "menuCard1Body",
+                          "fill": "#5A5A5A",
+                          "content": "看板ドリンクの主役カード。",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -517,14 +545,42 @@
                   "padding": 24,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "B3QvI",
-                      "name": "menuCard2Text",
-                      "fill": "#2D2D2D",
-                      "content": "ベリーバニーパフェ\n季節デザートの紹介カード。",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "q5HYx",
+                      "name": "menuCard2Content",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "MREHs",
+                          "name": "menuCard2Image",
+                          "width": "fill_container",
+                          "height": 120,
+                          "fill": "#ECD7CC",
+                          "cornerRadius": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "lsqtE",
+                          "name": "menuCard2Title",
+                          "fill": "#2D2D2D",
+                          "content": "ベリーバニーパフェ",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nbw6c",
+                          "name": "menuCard2Body",
+                          "fill": "#5A5A5A",
+                          "content": "季節デザートの紹介カード。",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -540,14 +596,42 @@
                   "padding": 24,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "kgaKo",
-                      "name": "menuCard3Text",
-                      "fill": "#2D2D2D",
-                      "content": "週末ティーセット\nふたり向けの限定プラン。",
-                      "fontFamily": "Inter",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "kIzut",
+                      "name": "menuCard3Content",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YEnWx",
+                          "name": "menuCard3Image",
+                          "width": "fill_container",
+                          "height": 120,
+                          "fill": "#DDE7D9",
+                          "cornerRadius": 16
+                        },
+                        {
+                          "type": "text",
+                          "id": "xokTD",
+                          "name": "menuCard3Title",
+                          "fill": "#2D2D2D",
+                          "content": "週末ティーセット",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b5Vpr",
+                          "name": "menuCard3Body",
+                          "fill": "#5A5A5A",
+                          "content": "ふたり向けの限定プラン。",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 }
