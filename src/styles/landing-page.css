@@ -386,9 +386,9 @@ h2 {
 
 .section-experience {
   display: grid;
-  grid-template-columns: minmax(0, 620px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 620px);
   gap: 40px;
-  align-items: center;
+  align-items: start;
 }
 
 .photo-panel {
@@ -402,84 +402,131 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.photo-scene {
+.bunny-carousel {
+  min-height: 454px;
+  gap: 16px;
+}
+
+.carousel-stage {
   position: relative;
   flex: 1;
   border-radius: calc(var(--radius-md) - 8px);
   background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.15)),
-    linear-gradient(135deg, rgba(243, 233, 218, 0.92), rgba(234, 240, 232, 0.7));
+    radial-gradient(circle at 72% 18%, rgba(255, 255, 255, 0.3), transparent 22%),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.26), transparent 42%),
+    linear-gradient(180deg, #f1e7d9, #eadcc8);
   overflow: hidden;
 }
 
-.photo-card {
+.carousel-stage::before {
+  content: "";
   position: absolute;
-  border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(248, 244, 238, 0.88));
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 0 18px 42px rgba(112, 94, 72, 0.08);
-}
-
-.photo-card-large {
-  top: 14%;
-  right: 12%;
-  left: 10%;
-  height: 48%;
-}
-
-.photo-card-small {
   right: 10%;
-  bottom: 14%;
-  width: 34%;
-  height: 26%;
+  bottom: 0;
+  left: 10%;
+  height: 34%;
+  border-radius: 24px 24px 0 0;
+  background:
+    linear-gradient(180deg, rgba(158, 129, 93, 0.12), rgba(125, 95, 61, 0.18)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.14), transparent);
+}
+
+.carousel-stage::after {
+  content: "";
+  position: absolute;
+  inset: 14% 24% auto auto;
+  width: 28%;
+  aspect-ratio: 1 / 1.2;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.64), rgba(250, 248, 245, 0.12)),
+    rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.26);
 }
 
 .experience-copy {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  padding-top: 8px;
 }
 
-.visit-flow {
+.experience-title,
+.experience-summary {
+  white-space: pre-line;
+}
+
+.experience-summary {
+  max-width: 34ch;
+}
+
+.carousel-footer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.visit-pill {
-  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 12px 24px rgba(112, 94, 72, 0.06);
-  font-size: 14px;
-  font-weight: 500;
+  gap: 16px;
 }
 
-.visit-pill small {
+.carousel-meta {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.carousel-meta h3,
+.carousel-meta p {
+  margin: 0;
+}
+
+.carousel-meta h3 {
+  font-family: "Fraunces", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.carousel-meta p {
+  color: var(--text-body);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.carousel-controls {
+  display: inline-flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.carousel-control {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  background: var(--accent);
-  color: #fff;
-  font-size: 11px;
+  background: rgba(124, 144, 130, 0.12);
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.support-note {
-  display: inline-flex;
+.carousel-dots {
+  display: flex;
   align-items: center;
-  padding: 14px 18px;
-  border-radius: var(--radius-sm);
-  background: var(--surface);
-  color: var(--text-main);
-  font-size: 14px;
-  line-height: 1.6;
-  box-shadow: 0 14px 30px rgba(112, 94, 72, 0.05);
+  gap: 6px;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(124, 144, 130, 0.24);
+}
+
+.carousel-dot.is-active {
+  width: 10px;
+  background: var(--accent);
 }
 
 .section-access {
@@ -675,6 +722,11 @@ h2 {
   .card-grid {
     grid-template-columns: 1fr;
   }
+
+  .section-experience {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -715,7 +767,7 @@ h2 {
   }
 
   .visual-stage,
-  .photo-scene {
+  .carousel-stage {
     min-height: 280px;
   }
 
@@ -725,8 +777,12 @@ h2 {
     margin: 8px 8px 0 0;
   }
 
-  .visit-flow {
-    gap: 8px;
+  .carousel-footer {
+    align-items: start;
+  }
+
+  .carousel-meta h3 {
+    font-size: 1.35rem;
   }
 
   .reservation-card .button {

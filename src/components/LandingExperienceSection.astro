@@ -6,43 +6,43 @@ interface Props {
 }
 
 const { experience } = Astro.props;
+const activeBunny = experience.bunnies[experience.activeIndex];
+const experienceTitle = experience.titleLines.join('\n');
+const experienceCopy = experience.copyLines.join('\n');
 ---
 
 <section class="section section-experience" id={experience.id}>
-	<div class="photo-panel">
-		<p class="photo-label">{experience.photoLabel}</p>
-		<div class="photo-scene" aria-hidden="true">
-			<div class="photo-card photo-card-large"></div>
-			<div class="photo-card photo-card-small"></div>
-		</div>
-	</div>
-
 	<div class="experience-copy">
 		<p class="eyebrow">{experience.eyebrow}</p>
-		<h2>
-			{experience.titleLines[0]}
-			<br />
-			{experience.titleLines[1]}
-			<br />
-			{experience.titleLines[2]}
-		</h2>
-		<p class="section-copy">
-			{experience.copyLines[0]}
-			<br />
-			{experience.copyLines[1]}
-		</p>
+		<h2 class="experience-title">{experienceTitle}</h2>
+		<p class="section-copy experience-summary">{experienceCopy}</p>
+	</div>
 
-		<div class="visit-flow" aria-label="来店の流れ">
+	<div class="photo-panel bunny-carousel" aria-label="今日会えるうさぎカルーセル">
+		<p class="photo-label">
+			{experience.carouselLabel} {experience.activeIndex + 1} / {experience.bunnies.length}
+		</p>
+		<div class="carousel-stage" aria-hidden="true"></div>
+
+		<div class="carousel-footer">
+			<div class="carousel-meta">
+				<h3>
+					{activeBunny.name} / {activeBunny.age}
+				</h3>
+				<p>{activeBunny.summary}</p>
+			</div>
+			<div class="carousel-controls" aria-hidden="true">
+				<span class="carousel-control">‹</span>
+				<span class="carousel-control">›</span>
+			</div>
+		</div>
+
+		<div class="carousel-dots" aria-hidden="true">
 			{
-				experience.visitSteps.map((step, index) => (
-					<span class="visit-pill">
-						<small>{index + 1}</small>
-						{step}
-					</span>
+				experience.bunnies.map((_, index) => (
+					<span class={`carousel-dot ${index === experience.activeIndex ? 'is-active' : ''}`}></span>
 				))
 			}
 		</div>
-
-		<div class="support-note">{experience.supportNote}</div>
 	</div>
 </section>

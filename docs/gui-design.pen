@@ -672,34 +672,10 @@
           "children": [
             {
               "type": "frame",
-              "id": "nIM4I",
-              "name": "Experience Photo",
-              "width": 620,
-              "height": 360,
-              "fill": "#F0EDE8",
-              "cornerRadius": 24,
-              "layout": "vertical",
-              "gap": 12,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "NsPCM",
-                  "name": "expVisualText",
-                  "fill": "#8A8A8A",
-                  "content": "写真プレースホルダー：うさぎ、木の質感、午後の光",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
               "id": "bXunj",
               "name": "expCopy",
               "width": "fill_container",
-              "height": 361,
+              "height": 165,
               "layout": "vertical",
               "gap": 18,
               "children": [
@@ -708,7 +684,7 @@
                   "id": "6Mmv6",
                   "name": "expEyebrow",
                   "fill": "#7C9082",
-                  "content": "過ごし方のイメージ",
+                  "content": "うさぎ紹介",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "normal"
@@ -718,7 +694,7 @@
                   "id": "z8pxr",
                   "name": "expTitle",
                   "fill": "#2D2D2D",
-                  "content": "到着して、くつろいで、\nうさぎに会って、\nデザートで締める。",
+                  "content": "今日会えるうさぎ",
                   "fontFamily": "Fraunces",
                   "fontSize": 34,
                   "fontWeight": "normal"
@@ -728,30 +704,110 @@
                   "id": "pVNRE",
                   "name": "expBody",
                   "fill": "#5A5A5A",
-                  "content": "来店の流れ、衛生面の案内、\nはじめての方向け説明をここに置きます。",
+                  "content": "写真、性格、好きなおやつ、ふれあえる時間帯を\n切り替えながら見られる想定です。",
                   "fontFamily": "Inter",
                   "fontSize": 17,
                   "fontWeight": "normal"
-                },
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nIM4I",
+              "name": "Experience Photo",
+              "width": 620,
+              "height": 454,
+              "fill": "#F8F4EE",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
                 {
                   "type": "frame",
-                  "id": "mUpB3",
-                  "name": "expNote",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 20,
-                  "padding": [
-                    14,
-                    18
-                  ],
+                  "id": "4mmq6",
+                  "name": "leftShell",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
                   "children": [
                     {
                       "type": "text",
-                      "id": "QMlB5",
-                      "name": "expNoteText",
-                      "fill": "#2D2D2D",
-                      "content": "補足帯：落ち着いた案内、時間制、スタッフ常駐。",
+                      "id": "EbSSN",
+                      "name": "leftLabel",
+                      "fill": "#8A8A8A",
+                      "content": "今日会えるうさぎ  1 / 4",
                       "fontFamily": "Inter",
-                      "fontSize": 14,
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uSETm",
+                      "name": "carouselStage",
+                      "width": "fill_container",
+                      "height": 250,
+                      "fill": "#F1E7D9",
+                      "cornerRadius": 22
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zANyD",
+                      "name": "leftFooter",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jOCDP",
+                          "name": "leftMeta",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "6G5uV",
+                              "name": "bunnyName",
+                              "fill": "#2D2D2D",
+                              "content": "こむぎ / 1歳",
+                              "fontFamily": "Fraunces",
+                              "fontSize": 28,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "lZTji",
+                              "name": "bunnySub",
+                              "fill": "#5A5A5A",
+                              "content": "おだやか / ひとなつこい / そっと近づくタイプ",
+                              "fontFamily": "Inter",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "XfTBC",
+                          "name": "controlText",
+                          "fill": "#7C9082",
+                          "content": "◀  ▶",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "medium"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "DiZoM",
+                      "name": "dots",
+                      "fill": "#7C9082",
+                      "content": "●  ○  ○  ○",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
                       "fontWeight": "normal"
                     }
                   ]

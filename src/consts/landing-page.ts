@@ -105,12 +105,33 @@ export const landingPageContent = {
   },
   experience: {
     id: "bunnies",
-    photoLabel: "写真プレースホルダー：うさぎ、木の質感、午後の光",
-    eyebrow: "過ごし方のイメージ",
-    titleLines: ["到着して、くつろいで、", "うさぎに会って、", "デザートで締める。"],
-    copyLines: ["来店の流れ、衛生面の案内、", "はじめての方向け説明をここに置きます。"],
-    visitSteps: ["到着", "くつろぐ", "ふれあう", "味わう"],
-    supportNote: "補足帯：落ち着いた案内、時間制、スタッフ常駐。",
+    eyebrow: "うさぎ紹介",
+    titleLines: ["今日会えるうさぎ"],
+    copyLines: ["写真、性格、好きなおやつ、ふれあえる時間帯を", "切り替えながら見られる想定です。"],
+    carouselLabel: "今日会えるうさぎ",
+    activeIndex: 0,
+    bunnies: [
+      {
+        name: "こむぎ",
+        age: "1歳",
+        summary: "おだやか / ひとなつこい / そっと近づくタイプ",
+      },
+      {
+        name: "しらたま",
+        age: "2歳",
+        summary: "好奇心たっぷり / ぴょんと近づく / おやつに敏感",
+      },
+      {
+        name: "きなこ",
+        age: "8か月",
+        summary: "まだ少し慎重 / 慣れると耳を寄せてくれる",
+      },
+      {
+        name: "ゆき",
+        age: "3歳",
+        summary: "のんびり屋 / ひなたでくつろぐのが好き",
+      },
+    ],
   },
   access: {
     id: "access",
