@@ -273,7 +273,7 @@
               "id": "V7c6q",
               "name": "conceptEyebrow",
               "fill": "#7C9082",
-              "content": "午後をほどく、小さな逃げ場。",
+              "content": "忙しない午後に、深呼吸できる居場所。",
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
@@ -283,7 +283,7 @@
               "id": "vpK0g",
               "name": "conceptTitle",
               "fill": "#2D2D2D",
-              "content": "つい長居したくなる\n理由をここで伝える。",
+              "content": "静かにほどける時間を\nうさぎと一緒に。",
               "fontFamily": "Fraunces",
               "fontSize": 38,
               "fontWeight": "normal"
@@ -293,7 +293,7 @@
               "id": "uVd0P",
               "name": "conceptSub",
               "fill": "#5A5A5A",
-              "content": "このラフでは、落ち着く空間、うさぎとのふれあい、\nカフェ体験の魅力が伝わる流れを先に固めています。",
+              "content": "やわらかな光の席、そっと寄り添ううさぎたち、\n甘さ控えめのスイーツで気持ちまでふっと軽くなります。",
               "fontFamily": "Inter",
               "fontSize": 18,
               "fontWeight": "normal"
@@ -320,6 +320,7 @@
                       "type": "frame",
                       "id": "esOPB",
                       "name": "benefit1Content",
+                      "width": 362,
                       "layout": "vertical",
                       "gap": 12,
                       "children": [
@@ -347,7 +348,7 @@
                           "id": "u1Poh",
                           "name": "benefit1Body",
                           "fill": "#5A5A5A",
-                          "content": "やわらかな光と落ち着いたテーブル。",
+                          "content": "ひとり時間も心地よく。",
                           "fontFamily": "Inter",
                           "fontSize": 16,
                           "fontWeight": "normal"
@@ -378,7 +379,7 @@
                           "type": "frame",
                           "id": "g1wka",
                           "name": "benefit2Image",
-                          "width": "fill_container",
+                          "width": 374,
                           "height": 120,
                           "fill": "#EEE4D2",
                           "cornerRadius": 16
@@ -398,7 +399,7 @@
                           "id": "pfGGd",
                           "name": "benefit2Body",
                           "fill": "#5A5A5A",
-                          "content": "やさしく見守るふれあい体験。",
+                          "content": "はじめてでも安心。",
                           "fontFamily": "Inter",
                           "fontSize": 16,
                           "fontWeight": "normal"
@@ -429,7 +430,7 @@
                           "type": "frame",
                           "id": "5CklD",
                           "name": "benefit3Image",
-                          "width": "fill_container",
+                          "width": 362,
                           "height": 120,
                           "fill": "#DDE8DA",
                           "cornerRadius": 16
@@ -449,7 +450,7 @@
                           "id": "VFtYK",
                           "name": "benefit3Body",
                           "fill": "#5A5A5A",
-                          "content": "うさぎをモチーフにしたドリンクとスイーツ。",
+                          "content": "限定の甘いごほうび。",
                           "fontFamily": "Inter",
                           "fontSize": 16,
                           "fontWeight": "normal"
@@ -480,7 +481,7 @@
               "id": "KcbYJ",
               "name": "menuEyebrow",
               "fill": "#7C9082",
-              "content": "おすすめメニュー",
+              "content": "今日のおすすめ",
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "normal"
@@ -490,7 +491,7 @@
               "id": "75rGs",
               "name": "menuTitle",
               "fill": "#2D2D2D",
-              "content": "看板ドリンクと\nスイーツ",
+              "content": "うさぎモチーフの\nやさしいごほうび",
               "fontFamily": "Fraunces",
               "fontSize": 36,
               "fontWeight": "normal"
@@ -517,6 +518,7 @@
                       "type": "frame",
                       "id": "Xdoo7",
                       "name": "menuCard1Content",
+                      "width": 366,
                       "layout": "vertical",
                       "gap": 12,
                       "children": [
@@ -544,7 +546,7 @@
                           "id": "2QhP1",
                           "name": "menuCard1Body",
                           "fill": "#5A5A5A",
-                          "content": "看板ドリンクの主役カード。",
+                          "content": "定番人気の一杯。",
                           "fontFamily": "Inter",
                           "fontSize": 16,
                           "fontWeight": "normal"
@@ -568,6 +570,7 @@
                       "type": "frame",
                       "id": "q5HYx",
                       "name": "menuCard2Content",
+                      "width": 367,
                       "layout": "vertical",
                       "gap": 12,
                       "children": [
@@ -595,7 +598,7 @@
                           "id": "nbw6c",
                           "name": "menuCard2Body",
                           "fill": "#5A5A5A",
-                          "content": "季節デザートの紹介カード。",
+                          "content": "季節の人気パフェ。",
                           "fontFamily": "Inter",
                           "fontSize": 16,
                           "fontWeight": "normal"
@@ -619,6 +622,7 @@
                       "type": "frame",
                       "id": "kIzut",
                       "name": "menuCard3Content",
+                      "width": 363,
                       "layout": "vertical",
                       "gap": 12,
                       "children": [
@@ -646,7 +650,7 @@
                           "id": "b5Vpr",
                           "name": "menuCard3Body",
                           "fill": "#5A5A5A",
-                          "content": "ふたり向けの限定プラン。",
+                          "content": "午後限定のティーセット。",
                           "fontFamily": "Inter",
                           "fontSize": 16,
                           "fontWeight": "normal"

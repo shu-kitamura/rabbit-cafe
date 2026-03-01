@@ -49,30 +49,30 @@ export const landingPageContent = {
     visualAlt: "やわらかな光の中で寄り添ううさぎたち",
   },
   concept: {
-    eyebrow: "午後をほどく、小さな逃げ場。",
-    titleLines: ["つい長居したくなる", "理由をここで伝える。"],
+    eyebrow: "忙しない午後に、深呼吸できる居場所。",
+    titleLines: ["静かにほどける時間を", "うさぎと一緒に。"],
     copyLines: [
-      "このラフでは、落ち着く空間、うさぎとのふれあい、",
-      "カフェ体験の魅力が伝わる流れを先に固めています。",
+      "やわらかな光の席、そっと寄り添ううさぎたち、",
+      "甘さ控えめのスイーツで気持ちまでふっと軽くなります。",
     ],
     cards: [
       {
         title: "静かな席",
-        body: "やわらかな光と落ち着いたテーブル。",
+        body: "ひとり時間も心地よく。",
         tone: "card-plain",
         image: tableImage,
         imageAlt: "やわらかな光が差し込む木のテーブル席",
       },
       {
         title: "うさぎとの時間",
-        body: "やさしく見守るふれあい体験。",
+        body: "はじめてでも安心。",
         tone: "card-warm",
         image: rabbitImage,
         imageAlt: "落ち着いた表情でこちらを見るうさぎ",
       },
       {
         title: "季節のメニュー",
-        body: "うさぎをモチーフにしたドリンクとスイーツ。",
+        body: "限定の甘いごほうび。",
         tone: "card-sage",
         image: sweetsImage,
         imageAlt: "うさぎをモチーフにしたドリンクとスイーツ",
@@ -81,26 +81,26 @@ export const landingPageContent = {
   },
   menu: {
     id: "menu",
-    eyebrow: "おすすめメニュー",
-    titleLines: ["看板ドリンクと", "スイーツ"],
+    eyebrow: "今日のおすすめ",
+    titleLines: ["うさぎモチーフのドリンクとスイーツ"],
     cards: [
       {
         title: "キャラメルヘイラテ",
-        body: "看板ドリンクの主役カード。",
+        body: "定番人気の一杯。",
         tone: "card-soft",
         image: cafeLatteImage,
         imageAlt: "キャラメルヘイラテのメニュー写真",
       },
       {
         title: "ベリーバニーパフェ",
-        body: "季節デザートの紹介カード。",
+        body: "季節の人気パフェ。",
         tone: "card-peach",
         image: parfaitImage,
         imageAlt: "ベリーバニーパフェのメニュー写真",
       },
       {
         title: "週末ティーセット",
-        body: "ふたり向けの限定プラン。",
+        body: "午後限定のティーセット。",
         tone: "card-mint",
         image: teaSetImage,
         imageAlt: "週末ティーセットのメニュー写真",
@@ -111,7 +111,7 @@ export const landingPageContent = {
     id: "bunnies",
     eyebrow: "うさぎ紹介",
     titleLines: ["今日会えるうさぎ"],
-    copyLines: ["写真、性格、好きなおやつ、ふれあえる時間帯を", "切り替えながら見られる想定です。"],
+    copyLines: ["個性を持ったうさぎたちと触れ合えます。", "お気に入りの子を見つけてください。"],
     activeIndex: 0,
     bunnies: [
       {
@@ -141,20 +141,20 @@ export const landingPageContent = {
         summary: "元気いっぱい / 好奇心旺盛 / すぐに駆け寄るタイプ",
         image: leoImage,
         imageAlt: "レオが元気に走り回る様子",
-      }
+      },
     ],
   },
   access: {
     id: "access",
     eyebrow: "アクセスと予約",
-    titleLines: ["先に予約して、", "迷わずたどり着く。"],
-    copyLines: ["営業時間、最寄り駅、", "簡単な利用ルールをここに。"],
-    mapTitle: "地図プレースホルダー＋営業時間",
-    notes: ["11:00-19:00 毎日営業", "最終入店 18:00", "駅から徒歩2分 / 予約優先"],
+    titleLines: ["アクセス"],
+    copyLines: ["日付を選んで予約することもできます。", "予約なしでも、空いていればご案内可能です。"],
+    mapTitle: "店舗情報",
+    notes: ["営業時間 : 11:00-19:00", "最終入店 : 18:00", "アクセス : ○○駅から徒歩2分 / 駐車場なし"],
   },
   reservation: {
-    titleLines: ["ゆっくり過ごす", "午後を予約"],
-    copyLines: ["予約UIの想定枠。", "日付、人数、プラン選択を配置。"],
+    titleLines: ["予約"],
+    copyLines: ["日付・人数を選択してください。"],
     fields: {
       dateLabel: "日付",
       defaultDate: "2026-03-01",
@@ -166,7 +166,7 @@ export const landingPageContent = {
   footer: {
     id: "footer",
     descriptionLines: ["お茶とスイーツ、そしてやさしいうさぎに会える、", "街の小さな隠れ家。"],
-    metaLines: ["11:00-19:00 毎日営業", "最終入店 18:00"],
+    metaLines: ["営業時間 : 11:00-19:00", "最終入店 : 18:00", "アクセス : ○○駅から徒歩2分 / 駐車場なし"],
   },
 } as const;
 
