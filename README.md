@@ -1,46 +1,64 @@
-# Astro Starter Kit: Basics
+# rabbit-cafe
+
+## 概要
+
+`rabbit-cafe` は、Astro 5 で構築した「うさぎカフェ」のLPサンプルです。  
+以下で公開しています。  
+https://lp-rabbit-cafe.shu-kita.net/
+
+UI デザインのソースは `docs/gui-design.pen`、実装コードは `src/` 配下にあります。  
+静的アセットは `src/assets/` と `public/` に配置しています。
+
+## 開発コマンド
+
+リポジトリのルートで `pnpm` を使って実行します。
+
+| コマンド | 内容 |
+| :-- | :-- |
+| `pnpm install` | 依存関係をインストールします。 |
+| `pnpm dev` | Astro の開発サーバーを起動します。 |
+| `pnpm build` | 本番用のビルドを `dist/` に出力します。 |
+| `pnpm preview` | Astro のプレビューサーバーでビルド結果を確認します。 |
+| `pnpm preview:wrangler` | `astro build` 実行後、`wrangler dev` で Cloudflare 想定のローカル確認を行います。 |
+| `pnpm lint` | `oxlint` でコードを検査します。 |
+| `pnpm lint:fix` | `oxlint` の安全な修正を適用します。 |
+| `pnpm fmt` | `oxfmt` でフォーマット差分を検査します。 |
+| `pnpm fmt:fix` | `oxfmt` でフォーマットを適用します。 |
+| `pnpm astro check` | Astro の診断を実行します。 |
+
+## 技術スタック
+
+- Astro 5
+- TypeScript
+- Cloudflare Wrangler 4
+- oxlint
+- oxfmt
+- pnpm
+
+## ローカルでの立て方
+
+1. 依存関係をインストールします。
 
 ```sh
-pnpm create astro@latest -- --template basics
+pnpm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. 開発サーバーを起動します。
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```sh
+pnpm dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+3. ブラウザで `http://localhost:4321` を開きます。
 
-## 🧞 Commands
+4. ビルド後の確認が必要な場合は、用途に応じて次を使います。
 
-All commands are run from the root of the project, from a terminal:
+```sh
+pnpm preview
+```
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+または
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+pnpm preview:wrangler
+```
