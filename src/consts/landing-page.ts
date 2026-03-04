@@ -5,10 +5,10 @@ import heroRabbitsImage from "../assets/hero/rabbits.webp";
 import cafeLatteImage from "../assets/menu/cafe-latte.png";
 import parfaitImage from "../assets/menu/parfait.png";
 import teaSetImage from "../assets/menu/tea-set.png";
-import komugiImage from "../assets/experience/komugi.png";
-import mimiImage from "../assets/experience/mimi.png";
-import omameImage from "../assets/experience/omame.png";
-import leoImage from "../assets/experience/leo.png";
+import komugiImage from "../assets/experience/komugi.webp";
+import mimiImage from "../assets/experience/mimi.webp";
+import omameImage from "../assets/experience/omame.webp";
+import leoImage from "../assets/experience/leo.webp";
 
 export const landingPageContent = {
   meta: {
