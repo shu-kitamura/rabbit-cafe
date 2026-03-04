@@ -19,12 +19,6 @@ const {
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap"
-			rel="stylesheet"
-		/>
 		<title>{title}</title>
 	</head>
 	<body>
@@ -35,6 +29,21 @@ const {
 <style is:global>
 	:root {
 		color-scheme: light;
+		--font-sans:
+			'Avenir Next',
+			'Segoe UI',
+			'Hiragino Sans',
+			'Hiragino Kaku Gothic ProN',
+			'Yu Gothic UI',
+			'Yu Gothic',
+			'Meiryo',
+			sans-serif;
+		--font-display:
+			'BIZ UDPMincho',
+			'Yu Mincho',
+			'Hiragino Mincho ProN',
+			'Hiragino Mincho Pro',
+			serif;
 	}
 
 	*,
@@ -54,13 +63,7 @@ const {
 		min-height: 100vh;
 		background: #faf8f5;
 		color: #2d2d2d;
-		font-family:
-			'Inter',
-			'Hiragino Sans',
-			'Hiragino Kaku Gothic ProN',
-			'Yu Gothic',
-			'Meiryo',
-			sans-serif;
+		font-family: var(--font-sans);
 	}
 
 	a {
