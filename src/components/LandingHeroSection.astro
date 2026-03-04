@@ -7,6 +7,8 @@ interface Props {
 }
 
 const { hero } = Astro.props;
+const heroImageSizes =
+	'(max-width: 640px) calc(100vw - 88px), (max-width: 900px) calc(100vw - 112px), (max-width: 1080px) calc(100vw - 208px), 572px';
 ---
 
 <section class="hero">
@@ -38,6 +40,9 @@ const { hero } = Astro.props;
 				class="hero-photo"
 				src={hero.visualImage}
 				alt={hero.visualAlt}
+				layout="constrained"
+				widths={[480, 720, 960, 1280, 1536]}
+				sizes={heroImageSizes}
 				loading="eager"
 				fetchpriority="high"
 			/>

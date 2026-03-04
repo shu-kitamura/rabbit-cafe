@@ -11,6 +11,8 @@ const bunnyCount = experience.bunnies.length;
 const initialIndex = bunnyCount > 0 ? Math.min(Math.max(experience.activeIndex, 0), bunnyCount - 1) : 0;
 const experienceTitle = experience.titleLines.join('\n');
 const experienceCopy = experience.copyLines.join('\n');
+const carouselImageSizes =
+	'(max-width: 640px) calc(100vw - 108px), (max-width: 900px) calc(100vw - 132px), (max-width: 1080px) calc(100vw - 228px), 552px';
 ---
 
 <section class="section section-experience" id={experience.id}>
@@ -42,7 +44,9 @@ const experienceCopy = experience.copyLines.join('\n');
 							class="carousel-image"
 							src={bunny.image}
 							alt={bunny.imageAlt}
-							sizes="(max-width: 900px) 100vw, 42vw"
+							layout="constrained"
+							widths={[480, 720, 960, 1280]}
+							sizes={carouselImageSizes}
 						/>
 					</div>
 				))
